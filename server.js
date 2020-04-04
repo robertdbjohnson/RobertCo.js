@@ -7,8 +7,6 @@ const { Pool } = require("pg");
 const connectionString = process.env.DATABASE_URL || "postgres://robertcouser:robertco@localhost:5432/robertco";
 const pool = new Pool({connectionString: connectionString});
 
-
-
 express()
   .use(express.static('public'))
   .set('views', 'views')
