@@ -33,6 +33,7 @@ function getPerson(req, res) {
 
         console.log("Back from the database with result:", result);
         res.json(result);
+        res.end();
     });
 }  
 
