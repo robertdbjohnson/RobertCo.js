@@ -1,4 +1,4 @@
-function LoadllAppointments() {
+function LoadAllAppointments() {
     console.log("Loading All Appointments...")
     var appointment = $("#appointment").val();
     console.log("Appointment: " + appointment);
