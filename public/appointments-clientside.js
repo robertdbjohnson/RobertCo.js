@@ -1,7 +1,7 @@
 function LoadAllAppointments() {
     console.log("Loading All Appointments...")
-    // var appointment = $("#appointment").val();
-    // console.log("Appointment: " + appointment);
+    var appointment = $("#appointment").val();
+    console.log("Appointment: " + appointment);
 
     $.get("/appointments", {appointment:appointment}, function(data) {
 		console.log("Back from the server with:");
