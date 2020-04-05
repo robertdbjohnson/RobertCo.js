@@ -4,11 +4,6 @@ require('dotenv').config();
 const appointmentsController = require("./controllers/appointmentsController.js")
 const PORT = process.env.PORT || 5000
 
-const { Pool } = require("pg");
-
-const connectionString = process.env.DATABASE_URL || "postgres://robertcouser:robertco@localhost:5432/robertco";
-const pool = new Pool({connectionString: connectionString});
-
 express()
   .use(express.static('public'))
   .use(express.json())
