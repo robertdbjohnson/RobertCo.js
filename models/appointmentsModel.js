@@ -13,13 +13,11 @@ function getAllAppointments(callback) {
             console.log(db_result);
 
             var result = {
-                appointments:db_results.rows
-                // [
-                //     {first:"Robert", last:"Johnson", phone:"111-222-3333", email:"rj@gmail.com", date:"05-02-2020", time:"12:00pm"},
-                //     {first:"Heidi", last:"Johnson", phone:"111-222-3333", email:"rj@gmail.com", date:"05-02-2020", time:"12:00pm"},
-                //     {first:"Joseph", last:"Johnson", phone:"111-222-3333", email:"rj@gmail.com", date:"05-02-2020", time:"12:00pm"}]
-                };
-            callback(null, result);
+                appointments: [
+                    {first:"Robert", last:"Johnson", phone:"111-222-3333", email:"rj@gmail.com", date:"05-02-2020", time:"12:00pm"},
+                    {first:"Heidi", last:"Johnson", phone:"111-222-3333", email:"rj@gmail.com", date:"05-02-2020", time:"12:00pm"},
+                    {first:"Joseph", last:"Johnson", phone:"111-222-3333", email:"rj@gmail.com", date:"05-02-2020", time:"12:00pm"}]};
+            callback(result);
         }
     });
 }
