@@ -1,6 +1,7 @@
 const { Pool } = require("pg");
 const connectionString = process.env.DATABASE_URL;
 const pool = new Pool({connectionString: connectionString});
+console.log("DB URL: " + connectionString);
 
 function getAllAppointments(callback) {
     console.log("First checkpoint");
