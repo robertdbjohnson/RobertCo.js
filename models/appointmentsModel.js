@@ -10,7 +10,7 @@ function getAllAppointments(callback) {
 
     var sql = "SELECT id, first, last, phone, email, date, time FROM persons";
 
-    pool.query(sql, function(db_result) {
+    pool.query(sql, function(err, db_result) {
         if (err) {
             throw err;
         } else {
