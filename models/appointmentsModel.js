@@ -14,8 +14,8 @@ function getAllAppointments(callback) {
         if (err) {
             throw err;
         } else {
-            console.log("Back from the DB with: ");
-            console.log(db_result);
+            // console.log("Back from the DB with: ");
+            // console.log(db_result);
 
             var result = {
                 appointments:db_result.rows};

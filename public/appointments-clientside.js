@@ -10,7 +10,8 @@ function LoadAllAppointments() {
 		for (var i = 0; i < data.appointments.length; i++) {
 			var appointment = data.appointments[i];
 
-			$("#ulAppointments").append("<li>" + appointment.first + " " + appointment.last + ": " + appointment.phone + "</li>");
+            $("#ulAppointments").append("<li>" + appointment.first + " " + appointment.last + ": " + appointment.phone +
+             " " + appointment.email + " " + appointment.date + " " + appointment.time + "</li>");
 		}
 
 	})
