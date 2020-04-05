@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+require('dotenv').config();
 const appointmentsController = require("./controllers/appointmentsController.js")
 const PORT = process.env.PORT || 5000
 
