@@ -7,7 +7,7 @@ function LoadAllAppointments() {
 		console.log("Back from the server with:");
 		console.log(data);
 
-		for (var i = 0; i < data.list.length; i++) {
+		for (var i = 0; i < data.appointments.length; i++) {
 			var appointment = data.list[i];
 
 			$("#ulAppointments").append("<li>" + appointment.first + " " + appointment.last + ": " + appointment.phone + "</li>");
