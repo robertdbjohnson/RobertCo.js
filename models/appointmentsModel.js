@@ -18,7 +18,7 @@ function getAllAppointments(callback) {
             console.log(db_result);
 
             var result = {
-                appointments:db_results.rows};
+                appointments:db_result.rows};
             callback(result); 
         }       
     });
